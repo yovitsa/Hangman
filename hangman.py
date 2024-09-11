@@ -1,8 +1,8 @@
 
 import random
 NUMBER_OF_TURNS = 10
-# """This function has 2 arugments, it checks if the letter is in the word in question, 
-# if it is not returns a '_' if it is there returns the list with letters"""
+"""This function has 2 arugments, it checks if the letter is in the word in question, 
+        if it is not returns a '_' if it is there returns the list with letters"""
 def reveal_letters(text, revealed):
     
     # empty list initilizaed
