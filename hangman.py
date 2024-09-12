@@ -42,4 +42,16 @@ def pick_random_word():
           return random.choice(words)
 
 def main(turns):
-     
+   '''Runs the game. Allows for "turns" loops (attempts).
+    At each turn:
+    1. Ask the user for a letter
+    2. Add the letter to the list of letters already tried by the player
+    3. If the letter was already tried, ask again
+    4. Use the show_letters_in_word function to display hints about the word
+    5. Remove 1 to the number of tries left
+    6. Check if the player
+        - won (= word has been found)
+        - lost (= word has not been found, no tries left)
+
+    Do not forget to pick a random word first :-)
+'''  
