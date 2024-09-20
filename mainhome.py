@@ -1,5 +1,4 @@
-from home import divs
-
+from home import abc
 
 if __name__ == "__main__":
-   divs()
+   abc()
