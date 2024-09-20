@@ -185,29 +185,98 @@
     #     else:
     #         print('Draw, hey, please continue')
     #         print('')
-import random
-def divs():
+# import random
+# def divs():
     
-    b = random.sample(range(1,10),1)
-    guess = 0
-    count = 0
-    for num in b:
+#     b = random.sample(range(1,10),1)    Q
+#     guess = 0
+#     count = 0
+#     for num in b:
        
-        while guess != num and guess != 'exit':
-            # guess = input('Please neter a number ')
-            if guess == 'exit':
-                print('Goodbye')
-                break
-
-            guess = int(input('Enter a number'))
-            count += 1 
-            if num > guess:
-                print('That is too low')
-                continue
-            elif num < guess:
-                print('That is too high')
-                continue
-            elif num  == guess:
-                print('You got it right')
-                print(f'You had {count} attempts')
+#         while guess != num and guess != 'exit':
+#             # guess = input('Please neter a number ')
+#             if guess == 'exit':
+#                 print('Goodbye')
+#                 break
+#             guess = int(input('Enter a number'))
+#             count += 1 
+#             if num > guess:
+#                 print('That is too low')
+#                 continue
+#             elif num < guess:
+#                 print('That is too high')
+#                 continue
+#             elif num  == guess:
+#                 print('You got it right')
+#                 print(f'You had {count} attempts')
         
+
+# Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (Hint: remember to use the user input lessons from the very first exercise)
+
+# Extras:
+
+# Keep the game going until the user types “exit”
+# Keep track of how many guesses the user has taken, and when the game ends, print this out.
+# import random
+# def r_number():
+#     ran_number = random.sample(range(1,11), 5)
+#     guess = 0
+#     count = 0
+
+#     for num in ran_number:
+        
+#         while guess != num and guess != 'exit':
+#             if guess == 'exit':
+#                 print('Have a nice day')
+#                 break
+            
+#             guess = int(input('Please enter a number from 1 to 10: '))
+#             count += 1
+#             if num < guess :
+#                 print('Too high')
+#             elif num > guess :
+#                 print('too loo') 
+#             elif num  == guess :
+#                 print(f'Congrats you got the right number')
+#                 print(f'You had {count} attempts')
+#         break
+        
+
+# from sympy import *
+
+# number = isprime(int(input('Please enter a number: ')))
+# if number == False:
+#     print('This is not a prime number')
+# else:
+#     print('This is a prime number')
+
+import random
+# a = random.sample(range(1,10),5)
+# print(a)
+# b = a[::len(a)-1]
+# print(b)
+
+
+# def abc():
+#     a = [1,2,3,4,5,5,6,4,6]
+#     b =[]
+#     c = [num for num in a if num in a and not num in b]
+#     print(c)
+
+# import random
+# from functools import reduce
+# def abc():
+#     r_s = input('Please type a sentence: ')
+#     # reverse_str = reduce(lambda x, y: y +x, r_s)
+#     # print(reverse_str)
+#     for i in r_s:
+#         r_s = i +r_s
+#     return r_s
+
+
+from functools import reduce
+
+def abc():
+    user_sentence = input('Type a sentence: ')
+    reverse_string = reduce(lambda x,y: y+x, user_sentence)
+    
